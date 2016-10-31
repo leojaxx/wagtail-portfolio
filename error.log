@@ -1,0 +1,124 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 89, in render_compressed
+    cached_offline = self.render_offline(context, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 73, in render_offline
+    'You may need to run "python manage.py compress".' % key)
+OfflineGenerationError: You have offline compression enabled but key "226d6eb926b50c9e4f286283a0e4a746" is missing from offline manifest. You may need to run "python manage.py compress".
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 150, in get_response
+    response = callback(request, **param_dict)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/views/defaults.py", line 31, in page_not_found
+    body = template.render(RequestContext(request, {'request_path': request.path}))
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 89, in render_compressed
+    cached_offline = self.render_offline(context, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 73, in render_offline
+    'You may need to run "python manage.py compress".' % key)
+OfflineGenerationError: You have offline compression enabled but key "226d6eb926b50c9e4f286283a0e4a746" is missing from offline manifest. You may need to run "python manage.py compress".
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 89, in render_compressed
+    cached_offline = self.render_offline(context, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 73, in render_offline
+    'You may need to run "python manage.py compress".' % key)
+OfflineGenerationError: You have offline compression enabled but key "226d6eb926b50c9e4f286283a0e4a746" is missing from offline manifest. You may need to run "python manage.py compress".
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/core/handlers/base.py", line 150, in get_response
+    response = callback(request, **param_dict)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/views/defaults.py", line 31, in page_not_found
+    body = template.render(RequestContext(request, {'request_path': request.path}))
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/django/template/base.py", line 858, in render_node
+    return node.render(context)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 149, in render
+    return self.render_compressed(context, self.kind, self.mode, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 89, in render_compressed
+    cached_offline = self.render_offline(context, forced=forced)
+  File "/home/leo/Env/portfolio/lib/python2.7/site-packages/compressor/templatetags/compress.py", line 73, in render_offline
+    'You may need to run "python manage.py compress".' % key)
+OfflineGenerationError: You have offline compression enabled but key "226d6eb926b50c9e4f286283a0e4a746" is missing from offline manifest. You may need to run "python manage.py compress".

@@ -1,0 +1,51 @@
+{% load core_tags compress static wagtailuserbar %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% block title %}{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
+    <meta name="description" content="{% if self.search_description %}{{self.search_description }}{% endif %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% compress css %}
+      <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    {% endcompress %}
+
+    {% compress js %}
+      <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    {% endcompress %}
+
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body class="{% block body_class %}{% endblock %}" role="document">
+    {% wagtailuserbar %}
+
+    {% block content %}{% endblock %}
+
+    <footer>
+      <div class="container">
+        <div class="text-center">
+            <span id="copyright" class="">&copy; <a href="http://leonardjackson.me">Web Development - Leonard Jackson</a> | <q>Work in portfolio does not belong to me. Links to original owners</q></span> | 
+            <span id="top-side" class=""><a href="#top">Take it to the Top!</a></span>
+        </div>
+      </div> <!-- end container -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    {% compress js %}
+      <script type="text/javascript" src="{% static 'js/vendor/bootstrap/bootstrap.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    {% endcompress %}
+
+    {% block extra_js %}
+
+    {% endblock %}
+  </body>
+</html>

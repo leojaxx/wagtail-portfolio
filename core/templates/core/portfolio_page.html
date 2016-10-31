@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% load static core_tags wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}templage-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+	<div id="wrapper">
+		<header>
+			<div class="navbar-wrapper page-nav">
+		    <div class="container">
+		      <nav class="navbar navbar-static-top">
+		        <div class="container">
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+		              data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		              <span class="sr-only">Toggle Navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a href="../" class="brand">
+		              <img src="{% static 'img/portfolio-logo.svg' %}" alt="Portfolio Template">
+		            </a>
+		          </div> <!-- end navbar-header -->
+		          <div class="navbar-collapse collapse" id="navbar">
+		            <ul class="nav navbar-nav pull-right" id="main-menu-right">
+		              <li><a href="../#portfolio">Portfolio</a></li>
+		              <li><a href="../#about">About</a></li>
+		              <li><a href="../#contact">Contact</a></li>
+		            </ul>
+		          </div> <!-- end nav-collapse -->
+		        </div> <!-- end container -->
+		      </nav> <!-- end navbar-static-top -->
+		    </div> <!-- end container -->
+		  </div> <!-- end navbar-fixed-top -->
+	  </header>
+
+		<div class="container">
+			<div class="title row">
+				<h2>{{ self.title }}</h2>
+			</div> {# end title row #}
+			<div class="row content">
+				<div class="col-sm-6">
+					{% if self.main_image %}
+				  	{% image self.main_image original class="img-responsive" %}
+				  {% endif %}		
+				</div> {# end col #}
+				<div class="col-sm-6">
+					{{ self.body }}
+				</div> {# end col #}
+			</div> {# end content row #}
+		</div> {# end container #}
+		<div id="push"></div>
+	</div>
+{% endblock %}

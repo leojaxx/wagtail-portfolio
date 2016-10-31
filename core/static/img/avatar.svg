@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="600px" viewBox="-79.25 -53.75 600 600" enable-background="new -79.25 -53.75 600 600"
+	 xml:space="preserve">
+<g id="Avatar">
+	<g id="Body">
+		
+			<linearGradient id="Shirt_1_" gradientUnits="userSpaceOnUse" x1="120.8022" y1="290.2656" x2="121.3234" y2="289.5594" gradientTransform="matrix(502.9 0 0 -371.0645 -60658.9492 108029.7344)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#9D9FA1"/>
+		</linearGradient>
+		<path id="Shirt" fill="url(#Shirt_1_)" d="M482.684,473.408c0,97.122-520.864,97.122-520.864,0S78.42,297.554,222.252,297.554
+			S482.684,376.286,482.684,473.408z"/>
+		<path id="Suit" fill="#1E1E1E" d="M323.511,310.832L222.773,539.854l-103.69-229.071
+			c-93.064,26.912-158.298,89.479-158.298,162.37c0,97.458,520.863,97.458,520.863,0
+			C481.647,400.303,416.488,337.768,323.511,310.832L323.511,310.832z"/>
+		<g id="Tie">
+			<g id="svg_5">
+				<g id="svg_6">
+					<path id="svg_7" fill="#195999" d="M265.656,352.419c0-19.906-26.758-18.486-42.352-18.486
+						c-15.588,0-42.341-1.419-42.341,18.486c0,19.924,26.753,53.64,42.341,53.64C238.898,406.058,265.656,372.343,265.656,352.419z"
+						/>
+				</g>
+			</g>
+			<g id="svg_2">
+				<g id="svg_3">
+					<path id="svg_4" fill="#195999" d="M265.656,510.29c0,38.723-26.758,35.958-42.352,35.958
+						c-15.588,0-42.341,2.765-42.341-35.958c0-38.744,26.753-104.315,42.341-104.315
+						C238.898,405.975,265.656,471.546,265.656,510.29z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="Head">
+		<g id="Face">
+			<g id="svg_13">
+				
+					<linearGradient id="svg_14_1_" gradientUnits="userSpaceOnUse" x1="121.459" y1="289.4834" x2="120.7234" y2="290.1883" gradientTransform="matrix(335.266 0 0 -349.844 -40372.3008 101527.1797)">
+					<stop  offset="0" style="stop-color:#D6A477"/>
+					<stop  offset="1" style="stop-color:#E4C3A8"/>
+				</linearGradient>
+				<ellipse id="svg_14" fill="url(#svg_14_1_)" cx="225.359" cy="130.019" rx="173.622" ry="174.922"/>
+			</g>
+		</g>
+		<g id="Hair">
+			<g id="svg_16">
+				<path id="svg_17" fill="#1E1E1E" d="M398.98,195.786c-24.146,7.08,0-196.574-236.695-116.109
+					c-6.438,0.548-16.555-20.483-67.143-14.869c-6.397,0.71-24.809,12.52-31.219,13.134c-20.512,1.846-10.255-20.303-4.202-31.974
+					c3.052-6.582,6.804-12.954,11.193-19.049c30.724-42.667,92.638-71.822,164.001-71.822c101.961,0,182.935,43.73,164.062,240.518"
+					/>
+			</g>
+		</g>
+		<g id="Glasses" transform="translate(152.72896,62.29158)">
+			<path fill="none" stroke="#000000" stroke-width="11" stroke-linejoin="round" d="M2.848,50.029
+				c0,33.31-9.296,60.126-20.845,60.126c-29.95,3.917-59.071,4.621-86.811,0c-11.549,0-20.849-26.817-20.849-60.126
+				C-112.901,39.912-15.103,40.414,2.848,50.029z"/>
+			<path fill="none" stroke="#000000" stroke-width="11" stroke-linejoin="round" d="M141.357,50.029
+				c0,33.31-9.299,60.126-20.842,60.126c-29.953,3.917-59.07,4.621-86.821,0c-11.541,0-20.841-26.817-20.841-60.126
+				C25.604,39.912,123.401,40.414,141.357,50.029z"/>
+		</g>
+	</g>
+</g>
+</svg>

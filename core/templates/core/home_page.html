@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% load static core_tags %}
+
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+  <header id="top">
+    <div class="banner">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <nav class="navbar navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="./" class="brand">
+                  <img src="{% static 'img/portfolio-logo.svg' %}" alt="Portfolio Template">
+                </a>
+              </div> <!-- end navbar-header -->
+              <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav pull-right" id="main-menu-right">
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div> <!-- end nav-collapse -->
+            </div> <!-- end container -->
+          </nav> <!-- end navbar-static-top -->
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 info">
+              <h1>Portfolio Theme</h1>
+              <h2>A template to showcase your design and development work</h2>
+              <p><a class="btn btn-default" href="portfolio.php">Check It!</a></p>
+            </div>
+          </div>
+        </div> <!-- end container -->
+      </div> <!-- end navbar-fixed-top -->
+    </div>
+  </header>
+
+  <section id="about" class="about-section accent">
+   <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="home-title">A Little About Me</h2>
+          <p>
+            Hey! My name's Mr D.E. Velope  but most know me Dev. I'm a designer and developer located in Canada. I love anything to do with the internet and making it a great source of information.
+          </p>
+          <p>
+            When not designing for the web I also like to design and develop mobile applications for Android &amp; iOs and create mockups and icons to share with the web. 
+          </p>
+          <p>
+            <q>This site was created using the <a href="https://wagtail.io/">Wagtail CMS</a> from <a href="https://torchbox.com/">Torchbox</a> ( which is based on <a href="https://www.djangoproject.com/">Django</a> ).</q>
+          </p>
+        </div> <!-- end col -->
+        <div class="col-sm-6">
+        <div class="avatar">
+          <img class="img-responsive" src="{% static 'img/avatar.svg' %}" alt="Avatar">
+        </div>
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+    </div> 
+  </section>
+
+  <section id="portfolio" class="work-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="home-title">My Recent Work</h2>
+        </div> <!-- end col -->
+        <div class="col-sm-6">
+          <p>
+            Please take the time to have a look at my portfolio and let me know if you see something you like. Any questions? Don't hesitate to <a href="contact.php">contact me</a> or hit me up on social media, I'd love to hear from you! <q>Not really my work, belongs to the great designers at <a href="http://behance.net">Behance</a></q>
+          </p>
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+      <div class="row">
+      	{% portfolio_item_list %}
+      </div> <!-- end row -->
+    </div>
+  </section>
+  <section id="contact" class="contact-section accent">
+    <div class="container">
+      <div class="row">
+        <h2 class="home-title">Contact</h2>
+        <div class="col-sm-6">
+          <p>
+            Want to have a chat? Got a question? Please quickly fill out the form to the left and I will get right back to you.
+          </p>
+          <p>
+            Thank you so much for visiting and I look forward to hearing from you soon.
+          </p>
+          <p>
+            <q>Don't really fill out the form, it's for show ;) </q>
+         </p>
+        </div> <!-- end col -->
+        <div class="col-sm-6">
+          <form action="#" method="post" name="contact" class="contact form-horizontal">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" name="name" class="form-control" id="name"
+                  placeholder="please enter your name.." />
+            </div>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="email" name="email" class="form-control" id="email"
+                  placeholder="please enter your email address.." />
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea name="message" rows="10" class="form-control" id="message"
+                  placeholder="what's your story?"></textarea><br />
+            </div>
+            <div class="form-group">
+              <input type="submit" name="submit" class="form-control submit" id="submit" value="Send Message">
+            </div>
+          </form> 
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+  </section>
+{% endblock %}

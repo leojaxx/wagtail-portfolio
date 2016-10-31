@@ -1,0 +1,61 @@
+header
+	.banner
+		background:
+			image: url("../../static/img/mac-portfolio-header.jpg")
+			position: center center
+			size: cover
+			color: none
+		height: 950px
+		min-height: 720px
+		@include box-shadow(0 22px 22px -22px rgba(0,0,0,0.8) inset, 0 -22px 22px -22px rgba(0,0,0,0.8) inset)
+
+		@media screen and (max-height: 720px)
+			height: 600px
+
+	.navbar-wrapper
+		+position(absolute, 10px 0 0)
+		z-index: 20
+
+		.container
+			padding-left: 0
+			padding-right: 0
+
+		.navbar
+			padding-left: 15px
+			padding-right: 15px
+
+			.container
+				width: auto
+
+				.brand
+					img
+						background-color: rgba(102,100,105,0.6)
+						+size(400px, 100px)
+
+				ul
+					padding-top: 20px
+
+					li
+						font:
+							size: 18px
+							weight: bold
+						text-transform: uppercase
+						a
+							color: $white
+							&:hover, &:focus
+								background-color: transparent
+
+				.navbar-toggle
+					background-color: rgba(102,100,105,0.9)
+
+					.icon-bar
+						background-color: $white
+
+		.info
+			margin-top: 5em
+			border-radius: 3px
+			background-color: rgba(102,100,105,0.5)
+
+			h1, h2
+				color: $white
+				opacity: none

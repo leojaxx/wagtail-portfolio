@@ -1,0 +1,21 @@
+
+{% if portfolio_items %}
+
+	{% for portfolio_item in portfolio_items %}
+		{% load wagtailcore_tags wagtailimages_tags %}
+		<div class="col-md-3 text-center img-col">
+      <div class="image">
+        <a href="{{ portfolio_item.url }}">
+	        {% if portfolio_item.main_image %}
+				  	{% image portfolio_item.main_image original as img %}
+				  	<img class="img-reponsive" src="{{ img.url }}" />
+				  {% endif %}	
+				</a>
+      </div> <!-- end image -->
+      <a class="btn btn-primary" href="{% pageurl portfolio_item %}">
+        {{ portfolio_item.title }}
+      </a>
+    </div> <!-- end col -->	
+	{% endfor %}
+
+{% endif %}
