@@ -28,6 +28,14 @@ COMPRESS_OFFLINE = True
 #     }
 # }
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'leo@leonardjackson.me'
+EMAIL_HOST_PASSWORD = 'Le@nB6tQ'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -43,7 +51,7 @@ LOGGING = {
             'handlers': ['file'],
             'level': 'ERROR',
             'propagate': True,
-         },
+        },
     },
 }
 

@@ -5,12 +5,12 @@
 {% block body_class %}template-blogindexpage{% endblock %}
 
 {% block content %}
-    <h1>{{ self.title }}</h1>
+    <h1>{{ page.title }}</h1>
 
-    <div class="intro">{{ self.intro|richtext }}</div>
-    {% if self.related_links.all %}
+    <div class="intro">{{ page.description|richtext }}</div>
+    {% if portfolio_items %}
         <ul>
-            {% for item in self.related_links.all %}
+            {% for item in portfolio_items %}
                 <li><a href="{{ item.link }}">{{ item.title }}</a></li>
             {% endfor %}
         </ul>

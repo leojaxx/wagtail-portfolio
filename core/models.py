@@ -3,8 +3,8 @@ import datetime
 
 from wagtail.wagtailcore import blocks
 from wagtail.wagtailcore.models import Page
-from wagtail.wagtailcore.fields import StreamField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, StreamFieldPanel, RichTextField
+from wagtail.wagtailcore.fields import StreamField, RichTextField
+from wagtail.wagtailadmin.edit_handlers import FieldPanel, StreamFieldPanel
 from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 from wagtail.wagtailsearch import index
 
@@ -42,10 +42,10 @@ class PortfolioPage(Page):
         ('html', blocks.RawHTMLBlock(icon='site', label='Raw HTML'))
     ])
 
-    search_fields = Page.search_fields + (
+    search_fields = Page.search_fields + [
         index.SearchField('intro'),
         index.SearchField('body')
-    )
+    ]
 
     @property
     def portfolio_index(self):
