@@ -13,6 +13,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ["DJANGO_SETTINGS_MODULE"] = 'wagtail-portfolio.settings.production'
+os.environ["DJANGO_SETTINGS_MODULE"] = "portfolio.settings.production"
 
 application = get_wsgi_application()
