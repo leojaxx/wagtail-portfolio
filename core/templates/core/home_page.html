@@ -79,9 +79,11 @@
           <p>
             Please take the time to have a look at my portfolio and let me know if you see something you like. Any questions? Don't hesitate to <a href="#contact">Contact</a> or hit me up on social media, I'd love to hear from you!
           </p>
-          <p>
-            <q>Not really my work, belongs to the great designers at <a href="http://behance.net">Behance</a></q>
-          </p>
+         {% if portfolio_items %}
+            <p>
+              <q>Not really my work, belongs to the great designers at <a href="http://behance.net">Behance</a></q>
+            </p>
+          {% endif %}
         </div> <!-- end col -->
       </div> <!-- end row -->
       <div class="row">

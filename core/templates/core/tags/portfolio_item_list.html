@@ -9,13 +9,19 @@
 	        {% if portfolio_item.main_image %}
 				  	{% image portfolio_item.main_image original as img %}
 				  	<img class="img-reponsive" src="{{ img.url }}" />
-				  {% endif %}	
+				  {% endif %}
 				</a>
       </div> <!-- end image -->
       <a class="btn btn-primary" href="{% pageurl portfolio_item %}">
         {{ portfolio_item.title }}
       </a>
-    </div> <!-- end col -->	
+    </div> <!-- end col -->
 	{% endfor %}
+
+{% else %}
+
+  <div class="text-center">
+    <p>Nothing here yet. I'm probably updating it right now. Please try back later :D</p>
+  </div>
 
 {% endif %}
